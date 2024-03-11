@@ -9,8 +9,6 @@ import { InvoiceLine } from 'ubl-builder/lib/ubl21/CommonAggregateComponents';
  * This file contains helper functions to set individual fields in the invoice object 
  * I choose to do it this way as some fields are arrays and need to be iterated
  * Other fields like invoiceLine need custom objects
- * If someone finds a better way to implement this go for it 
- * (Although I will die inside since this took forever)
  */
 
 
