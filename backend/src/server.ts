@@ -1,7 +1,3 @@
-/***
- * I was trying a couple packages for uploading files to an s3 bucket
- * Matt if you end up looking at this check multer and multer-s3
- */
 
 import express from 'express';
 import http from 'http';
@@ -50,8 +46,6 @@ const upload = multer({
     })
 })
 
-// will have to make sure filenames are unique atm
-// multer uplaods the iel to the s3 bucket this code is kinda janky
 // Just looked at a multer tutorial but should be a good starting point
 app.post('/create/new', upload.single('file'), (req, res) => {
     res.send({
